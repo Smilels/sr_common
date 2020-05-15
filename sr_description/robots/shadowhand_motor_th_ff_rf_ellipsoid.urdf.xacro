@@ -15,5 +15,5 @@ name="shadowhand_motor">
   </joint>
   <!-- eli is used for other fingers since th, ff and rf are forced to eli -->
   <xacro:shadowhand muscletrans="false" muscle="false" bio="false" bt_sp="false"
-  ubi="false" eli="false" reflect="1.0" prefix="rh_" />
+  ubi="false" eli="false" reflect="1.0" prefix="rh_" extended_limits:="false" />
 </robot>

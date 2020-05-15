@@ -15,8 +15,9 @@ xmlns:geom="http://playerstage.sourceforge.net/gazebo/xmlschema/#geom">
   <!-- eli is true for ellipsoid fingertip or false for standard finger -->
   <!-- prefix can be anything but usually is "r_" or  "l_" for right and left hands distinction -->
   <!-- parent is the parent link for the first joint -->
+  <!-- extended_limits is true if using the extended range of this joint -->
   <xacro:macro name="thdistal"
-  params="muscle bio bt_sp ubi eli prefix parent">
+  params="muscle bio bt_sp ubi eli prefix parent extended_limits">
     <xacro:if value="${bio}">
       <!--    BIOTAC -->
       <link name="${prefix}thdistal_J1_dummy">

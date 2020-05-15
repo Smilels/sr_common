@@ -18,7 +18,7 @@ xmlns:xacro="http://www.ros.org/wiki/xacro">
   <!-- prefix can be anything but usually is "r_" or  "l_" for right and left hands distinction -->
   <!-- lf is true if we want a little finger, false otherwise -->
   <xacro:macro name="shadowhand"
-  params="muscletrans muscle bio bt_sp ubi eli reflect prefix lf">
+  params="muscletrans muscle bio bt_sp ubi eli reflect prefix lf extended_limits">
     <!-- Forearm -->
     <xacro:forearm muscle="${muscle}" prefix="${prefix}" />
     <!-- Wrist -->

@@ -16,8 +16,9 @@
   <!-- link_prefix prepends fingername to the link names -->
   <!-- joint_prefix prepends fingername to the joint names -->
   <!-- parent is the parent link for the first joint -->
+  <!-- extended_limits is true if using the extended range of this joint -->
   <xacro:macro name="finger"
-  params="muscletrans lf bio bt_sp ubi eli reflect prefix link_prefix joint_prefix parent *origin *axis">
+  params="muscletrans lf bio bt_sp ubi eli reflect prefix link_prefix joint_prefix parent *origin *axis extended_limits:='false'">
 
     <!-- Little finger special case -->
     <xacro:if value="${lf}">
